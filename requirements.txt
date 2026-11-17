@@ -1,0 +1,15 @@
+
+fastapi==0.115.12             # Web framework that builds the backend API routes
+uvicorn[standard]==0.34.2     # Server that runs the FastAPI app
+jinja2==3.1.6                 # Renders the index.html template for the UI
+pydantic-settings==2.8.1      # Loads .env values into typed config settings
+boto3==1.37.38                # AWS SDK: talks to S3 and Bedrock
+psycopg[binary,pool]==3.2.6   # PostgreSQL driver for the Render database
+pypdf==5.4.0                  # Extracts text from uploaded PDF files
+python-docx==1.1.2            # Extracts text from uploaded Word (.docx) files
+httpx==0.28.1                 # HTTP client, used by FastAPI's test tools
+langgraph>=0.2,<2             # Builds the step-by-step RAG workflow graph
+pinecone>=5,<9                # Pinecone client: stores and searches embeddings
+python-dotenv==1.0.1          # Reads the .env file into environment variables
+
+glassflow-rius>=1.0,<2.0      # Rius observability: traces workflow steps and timing
